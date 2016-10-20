@@ -1,7 +1,7 @@
 - job:
     name: iam_jjb_auto_<appndid>
     project-type: freestyle
-    defaults: global
+    defaults: global 
     description: 'Build and Deploy of petclinc via JJB -Branch Arunesh - Demo'
     block-downstream: false
     concurrent: true
