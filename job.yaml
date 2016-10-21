@@ -26,13 +26,13 @@
             maven-version: Maven3
             pom: pom.xml
             goals: clean install #sonar:sonar -Dsonar.host.url=http://54.197.152.39:9001/
-          #  shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "ifconfig"
-          #  shell: cd /var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/
-          #  shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "/usr/share/tomcat7/bin/shutdown.sh"
-          #  shell: sleep 10
-          #  shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "rm -rf /var/lib/tomcat7/webapps/Locan*"
-          #  shell: scp -rp -oStrictHostKeyChecking=no -i /usr/share/master.pem "/var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/petclinic.war" "ubuntu@52.90.150.100:/var/lib/tomcat7/webapps/"
-          #  shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "/usr/share/tomcat7/bin/startup.sh"
+          #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "ifconfig"
+          #- shell: cd /var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/
+          #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "/usr/share/tomcat7/bin/shutdown.sh"
+          #- shell: sleep 10
+          #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "rm -rf /var/lib/tomcat7/webapps/Locan*"
+          #- shell: scp -rp -oStrictHostKeyChecking=no -i /usr/share/master.pem "/var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/petclinic.war" "ubuntu@52.90.150.100:/var/lib/tomcat7/webapps/"
+          #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.90.150.100 "/usr/share/tomcat7/bin/startup.sh"
 
     publishers:
        - logstash:
