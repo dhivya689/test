@@ -21,6 +21,7 @@
     triggers:
        - pollscm:
           cron: "* * * * *"
+          ignore-post-commit-hooks: True
     builders:
        - maven-target:
             maven-version: Maven3
