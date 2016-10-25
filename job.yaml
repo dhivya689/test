@@ -20,7 +20,7 @@
             per-build-tag: true
     triggers:
        - pollscm:
-          cron: ""
+          cron: "*/10 * * * *"
     builders:
        - maven-target:
             maven-version: Maven3
