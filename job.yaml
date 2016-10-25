@@ -18,6 +18,8 @@
           git-config-email: arunesh.m@cognizant.com
           extensions:
             per-build-tag: true
+    triggers:
+       - pollscm:
     builders:
        - maven-target:
             maven-version: Maven3
