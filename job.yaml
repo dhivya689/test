@@ -7,6 +7,9 @@
     concurrent: true
     node: master
     properties:
+       - throttle:
+          max-per-node: 1
+          max-total: 1
        - github:
           url: https://github.com/devopsbasservice/springpetclinic
     scm:
