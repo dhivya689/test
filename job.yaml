@@ -6,7 +6,6 @@
     block-downstream: true
     block-upstream: true
     concurrent: false
-    quiet-period: 10000
     node: master
     properties:
        - throttle:
@@ -18,11 +17,15 @@
        - git:
           url: https://github.com/devopsbasservice/springpetclinic
           branches:
-            - arunesh
+            - refs/heads/arunesh
           git-config-name: Arunesh
           git-config-email: arunesh.m@cognizant.com
           extensions:
-            per-build-tag: true
+            per-build-tag: false
+            prune: true
+            ignore-notify: true
+            force-polling-using-workspace: false
+            
     triggers:
        - pollscm:
           cron: "* * * * *"
