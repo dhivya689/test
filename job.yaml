@@ -20,7 +20,7 @@
             per-build-tag: true
     triggers:
        - pollscm:
-          cron: "H/7 * * * *"
+          cron: "H/1 * * * *"
           ignore-post-commit-hooks: True
     builders:
        - maven-target:
