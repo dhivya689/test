@@ -24,8 +24,7 @@
             per-build-tag: false
             prune: true
             ignore-notify: true
-            force-polling-using-workspace: false
-            
+            force-polling-using-workspace: true            
     triggers:
        - pollscm:
           cron: "* * * * *"
