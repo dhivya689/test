@@ -38,7 +38,7 @@
        #- shell: cd /var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/
        #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "/opt/tomcat/bin/shutdown.sh"
        #- shell: sleep 10
-       #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "rm -rf /opt/tomcat/webapps/Locan*"
+       #- shell:  ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "rm -rf /opt/tomcat/webapps/Locan*"
        #- shell: scp -rp -oStrictHostKeyChecking=no -i /usr/share/master.pem "/var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/petclinic.war" "ubuntu@52.91.246.250:/opt/tomcat/webapps/"
        #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "/opt/tomcat/bin/startup.sh"
 
