@@ -35,7 +35,6 @@
         <webjars-jquery.version>2.2.4</webjars-jquery.version>
         <dandelion.version>1.1.1</dandelion.version>
         <dandelion.datatables.version>1.1.0</dandelion.datatables.version>
-
         <cobertura.version>2.7</cobertura.version>
 
     </properties>

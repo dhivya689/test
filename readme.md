@@ -1,9 +1,9 @@
-# Spring Boot version of the Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)  OK!!
+# Spring  Boot version of the Spring PetClinic Sample Application [![Build Status](https://travis-ci.org/spring-projects/spring-petclinic.png?branch=master)](https://travis-ci.org/spring-projects/spring-petclinic/)  OK!!
 
-## Understanding the Spring Petclinic application with a few diagrams
+## Understanding the Spring Petclinic  application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
-## Running petclinic locally
+## Running petclinic locally 
 ```
 	git clone https://github.com/spring-projects/spring-petclinic.git
 	cd spring-petclinic
@@ -45,7 +45,7 @@ If m2e is not there, just follow the install process here: http://eclipse.org/m2
 
 1) In the command line
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
+git clone https://github.com/spring-projects/spring-petclinic.git 
 ```
 2) Inside Eclipse
 ```
