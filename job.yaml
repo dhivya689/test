@@ -20,10 +20,11 @@
             - refs/heads/arunesh
           git-config-name: Arunesh
           git-config-email: arunesh.m@cognizant.com
+          force-polling-using-workspace: true
+          prune: true
           extensions:
             per-build-tag: false
-            prune: true
-            force-polling-using-workspace: true
+            prune: true            
     triggers:
        - pollscm:
           cron: "* * * * *"
