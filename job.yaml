@@ -23,7 +23,7 @@
           extensions:
             per-build-tag: false
             prune: true
-            force-polling-using-workspace: True             
+            force-polling-using-workspace: true
     triggers:
        - pollscm:
           cron: "* * * * *"
