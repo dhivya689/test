@@ -1,8 +1,8 @@
 - job:
-    name: spring_petclinic_jjb_arunesh_<appndid>
+    name: spring_petclinic_jjb_arunesh_demo_<appndid>
     project-type: freestyle
     defaults: global
-    description: 'Build and Deploy of petclinc via JJB - Branch arunesh'
+    description: 'Build and Deploy of petclinc via JJB -Branch arunesh'
     block-downstream: true
     block-upstream: true
     concurrent: false
@@ -33,7 +33,15 @@
        - maven-target:
             maven-version: Maven3
             pom: pom.xml
-            goals: clean install
+            goals: clean install # sonar:sonar -Dsonar.host.url=http://50.17.36.28:9001/
+       #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@v "ifconfig"
+       #- shell: cd /var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/
+       #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "/opt/tomcat/bin/shutdown.sh"
+       #- shell: sleep 10
+       #- shell:  ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "rm -rf /opt/tomcat/webapps/Locan*"
+       #- shell: scp -rp -oStrictHostKeyChecking=no -i /usr/share/master.pem "/var/jenkins/workspace/spring_petclinic_jjb_<appndid>/target/petclinic.war" "ubuntu@52.91.246.250:/opt/tomcat/webapps/"
+       #- shell: ssh -oStrictHostKeyChecking=no -i /usr/share/master.pem ubuntu@52.91.246.250 "/opt/tomcat/bin/startup.sh"
+
     publishers:
        - logstash:
           max-lines: -1
