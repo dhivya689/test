@@ -33,7 +33,7 @@
        - maven-target:
             maven-version: Maven3
             pom: pom.xml
-            goals: clean install        
+            goals: clean install sonar:sonar -Dsonar.host.url=http://52.91.184.145:9001/
     publishers:
        - logstash:
           max-lines: -1
