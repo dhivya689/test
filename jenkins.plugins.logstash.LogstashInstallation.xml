@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jenkins.plugins.logstash.LogstashInstallation_-Descriptor plugin="logstash@1.2.0">
+  <installations class="jenkins.plugins.logstash.LogstashInstallation-array"/>
+  <type>ELASTICSEARCH</type>
+  <host>http://52.90.237.64</host>
+  <port>9200</port>
+  <username></username>
+  <password></password>
+  <key>/jenkins/t1</key>
+</jenkins.plugins.logstash.LogstashInstallation_-Descriptor>
