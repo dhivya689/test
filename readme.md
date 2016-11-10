@@ -3,7 +3,7 @@
 ## Understanding the Spring Petclinic application with a few diagrams
 <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See  the presentation here</a>
 
-#  Running petclinic locally 
+#  Runn ing petclinic locally 
 ```
 	git clone https://github.com/spring-projects/spring-petclinic.git
 	cd spring-petclinic 
