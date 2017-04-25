@@ -3,11 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''echo "hello"
-
-&& 
-pwd &&
-ls'''
+        sh 'echo $workspace'
       }
     }
   }
